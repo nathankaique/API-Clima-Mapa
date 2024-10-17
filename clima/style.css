@@ -1,0 +1,252 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 5;
+}
+
+header {
+    background-color: #18161696;
+    height: 70px;
+}
+
+i {
+    margin: 10px;
+}
+
+p {
+    width: fit-content;
+}
+
+footer {
+    background-color: #000000;
+}
+
+#map {
+    height: 100vh;
+}
+
+.city {
+    background: linear-gradient(90deg, #ffffff, #858585);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: left bottom;
+    width: fit-content;
+}
+
+.city-text-title {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 700;
+    transition: all 1s ease;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a89f9f57;
+    margin: 10px;
+    color: #ffffff;
+    padding: 10px;
+    box-shadow: 1px 4px 5px #151718;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 19px;
+    transition: all 1s ease;
+}
+
+.container:hover {
+    color: #949292;
+}
+
+.container:hover .title{
+    color: #979797;
+}
+
+.featured-container:hover {
+    color: #ffffff;
+}
+
+.featured-container:hover .title{
+    color: #ffffff;
+}
+
+
+.featured-container {
+    background: linear-gradient(133deg, #707070, #000000);
+    color: #fcfcfc;
+}
+
+.featured-container .title {
+    color: #fcfcfc;
+    font-size: 50px;
+}
+
+.information {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.climate-data-area {
+    margin: 0;
+    width: 32%;
+    background-color: #252121de;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    box-shadow: 1px 1px 5px #adadad;
+    position: absolute;
+    z-index: 9999;
+}
+
+.climate-data {
+    display: flex;
+    width: 100%;
+}
+
+.centralizer-data {
+    margin-top: 10%;
+}
+
+.final-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-text a {
+    font-style: italic;
+    color: #ebebeb;
+    margin: 10px;
+}
+
+.final-text p {
+    color: #ebebeb;
+    margin: 10px;
+
+}
+
+.search-city {
+    padding: 5px;
+    border:none;
+    width: 300px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.search-city:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.search-city-submit {
+    padding: 5px;
+    border: none;
+    color: #000000;
+    background-color: #00000000;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.search-city-label {
+    padding: 5px;
+    border: none;
+    color: #0e0e0e;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.search-city-form form {
+    position: absolute;
+    background-color: #ffffff;
+    width: fit-content; 
+    border-radius: 40px;
+    box-shadow: 1px 1px 5px #030303;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    z-index: 9999;
+}
+
+.search-city-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .climate-data-area {
+        width: 100%; 
+        position: relative; 
+        z-index: 1;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%; 
+        z-index: 1; 
+    }
+
+    .featured-container .title {
+        font-size: 30px;
+    }
+
+    #map {
+        height: 50vh; 
+    }
+
+    .search-city {
+        width: 90%; 
+        max-width: 400px; 
+        margin: 10px 0; 
+        padding: 10px; 
+        z-index: 1; 
+        position: relative;
+    }
+
+    .search-city-form form {
+        width: 100%; 
+        justify-content: center; 
+        position: relative; 
+        z-index: 2; 
+    }
+
+    .search-city-label {
+        position: relative; 
+        z-index: 2; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px; 
+    }
+
+    .container {
+        padding: 15px; 
+    }
+
+    .search-city {
+        width: 100%; 
+        padding: 8px; 
+    }
+
+    .search-city-form form {
+        flex-direction: column; 
+    }
+}
+
